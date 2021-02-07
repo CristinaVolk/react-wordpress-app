@@ -4,8 +4,11 @@ import styles from "./styles.module.css";
 import LineIcon from "../../assets/lineIcon.png";
 import ArrowIcon from "../../assets/right-arrow-icon.png";
 
+const sizeOnChange = 1000;
+
 export default function MainPage() {
-  const { isMobile } = useOnResize();
+  const { isMobile } = useOnResize(sizeOnChange);
+  console.log(isMobile);
   return (
     <div className={styles.mainTextContainer}>
       <div className={styles.leftPartMainContainer}>
