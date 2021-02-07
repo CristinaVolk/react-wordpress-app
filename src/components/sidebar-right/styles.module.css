@@ -1,0 +1,47 @@
+button:focus {
+  outline: 0 !important;
+}
+
+.rightSidebarContainer {
+  width: 4%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  display: flex;
+  border-left: 1px solid gray;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  font-size: 0.7em;
+}
+
+.firstChild {
+  max-width: fit-content;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  margin: 15px auto;
+  cursor: pointer;
+}
+
+.secondChild {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-right: 1vw;
+  line-height: 20px;
+  writing-mode: vertical-rl;
+}
+
+.thirdChild {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.thirdChild > img {
+  height: 16px;
+  width: 16px;
+  margin-top: 19px;
+  cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.navbarWrapper {
+  height: 50px;
+  width: 100vw;
+  position: fixed;
+  left: 57px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar {
+  width: 20vw;
+  margin-left: 85px;
+  border-right: 1px solid grey;
+  height: 100vh;
+}
+
+.logo {
+  width: 12vw;
+  margin-top: 15px;
+}

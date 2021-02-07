@@ -1,0 +1,77 @@
+.mainTextContainer {
+  height: 100%;
+  font-family: "Gilroy-Bold", sans-serif;
+  display: flex;
+}
+
+.leftPartMainContainer {
+  margin-top: 25%;
+  margin-left: 16%;
+  margin-right: 20vw;
+  width: 57%;
+}
+
+.lineOne {
+  font-family: "Gilroy-Light", sans-serif;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.lineOne > p {
+  margin: 0 15px 0 0;
+}
+
+.lineIcon {
+  width: 90px;
+  height: 5px;
+  margin: 7px 10px 0 0;
+}
+
+.lineTwo {
+  font-size: 2.3em;
+  margin: 5px;
+}
+
+.lineThree {
+  font-family: "Gilroy-Light", sans-serif;
+  margin: 5px;
+}
+
+.lineFour {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  text-transform: uppercase;
+  margin-top: 60px;
+  font-size: 0.6em;
+  letter-spacing: 5px;
+  font-family: "Gilroy-Light", sans-serif;
+  font-weight: 600;
+}
+
+.arrowIcon {
+  height: 2vh;
+  background: transparent;
+  margin-right: 12px;
+  margin-bottom: 11px;
+  width: 2vw;
+}
+
+.mainLabel {
+  font-size: 7.3em;
+  letter-spacing: 2px;
+  writing-mode: vertical-rl;
+  color: rgb(62 62 62 / 50%);
+  line-height: 0.9em;
+  font-family: "Gilroy-Bold", sans-serif;
+  position: absolute;
+  right: 21vw;
+  height: 100%;
+}
+
+.mainLabel > div:nth-child(1) {
+  margin-top: -7%;
+}
+
+.mainLabel > div:nth-child(2) {
+  padding-top: 50%;
+  border-right: 1px solid gray;
+}

@@ -1,0 +1,39 @@
+.sideBar {
+  width: 57px;
+  bottom: 0px;
+  position: fixed;
+  border-right: 1px solid gray;
+  margin-left: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.sideBarBottomItem {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.sideBarBottomItem > span {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 20px;
+  writing-mode: vertical-rl;
+  font-size: 0.7em;
+}
+.lineContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.line {
+  border-left: 2px solid rgb(66, 63, 63);
+  height: 36px;
+  position: absolute;
+  left: 16px;
+  bottom: 88px;
+}
