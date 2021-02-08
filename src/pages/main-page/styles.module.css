@@ -1,7 +1,14 @@
 .mainTextContainer {
   height: 100%;
+  width: 100%;
+  color: black;
   font-family: "Gilroy-Bold", sans-serif;
   display: flex;
+  background-image: url("../../assets/mcg-landing.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0;
+  background-color: #ebeced;
 }
 
 .leftPartMainContainer {

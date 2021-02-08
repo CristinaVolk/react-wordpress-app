@@ -11,16 +11,12 @@ body {
   height: 100vw;
   width: 100vw;
   background-color: #ebeced;
-  background-image: url("./assets/mcg-landing.png");
-  background-size: contain;
   font-family: "Gilroy-Light", sans-serif;
-  background-repeat: no-repeat;
 }
 
 #root {
   height: 100vw;
   width: 100vw;
-
   font-size: 1.25em;
   overflow-x: hidden;
   cursor: default;
@@ -32,8 +28,5 @@ body {
   display: flex;
   flex-flow: row wrap;
   margin: 0;
-}
-.parallax {
-  height: 600px;
-  background-attachment: fixed;
+  background-color: #ebeced;
 }
