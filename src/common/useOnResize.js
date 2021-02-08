@@ -2,22 +2,26 @@ import { useState, useEffect } from "react";
 
 export const useOnResize = (criticalSize) => {
   const [isMobile, setIsMobile] = useState(false);
-  console.log(criticalSize);
 
   useEffect(() => {
     onResize(criticalSize);
     window.addEventListener("resize", () => {
-      console.log(onResize(criticalSize));
       setIsMobile(onResize(criticalSize));
+      console.log(isMobile);
     });
-    return () =>
+    return () => {
       window.removeEventListener("resize", () => onResize(criticalSize));
-  });
+    };
+  }, [criticalSize, isMobile]);
   return {
     isMobile,
   };
 };
 
 const onResize = (criticalSize) => {
-  return window.innerWidth <= criticalSize ? true : false;
+  if (window.innerWidth <= criticalSize) {
+    return true;
+  } else {
+    return false;
+  }
 };

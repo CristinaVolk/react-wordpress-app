@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { ParticleEffect } from "../../components/ParticleEffect";
 import { useOnResize } from "../../common/useOnResize.js";
-import styles from "./styles.module.css";
 import LineIcon from "../../assets/lineIcon.png";
 import ArrowIcon from "../../assets/right-arrow-icon.png";
+import styles from "./styles.module.css";
 
 const sizeOnChange = 1000;
 
 export default function MainPage() {
   const { isMobile } = useOnResize(sizeOnChange);
-  console.log(isMobile);
+  const [hidden, setHidden] = useState(false);
+
+  useEffect(() => {
+    if (isMobile) {
+      setHidden(true);
+    }
+    return () => {
+      setHidden(false);
+    };
+  }, [isMobile]);
+
   return (
     <div className={styles.mainTextContainer}>
       <div className={styles.leftPartMainContainer}>
@@ -28,7 +39,19 @@ export default function MainPage() {
         </div>
       </div>
 
-      {isMobile ? null : (
+      {isMobile ? (
+        <div className={styles.mainLabel}>
+          <ParticleEffect
+            content={
+              <>
+                <div>Human</div>
+                <div>Engagement</div>
+              </>
+            }
+            hidden={hidden}
+          ></ParticleEffect>
+        </div>
+      ) : (
         <div className={styles.mainLabel}>
           <div>Human</div>
           <div>Engagement</div>

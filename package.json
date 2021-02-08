@@ -10,6 +10,7 @@
         "react": "^17.0.1",
         "react-burger-menu": "2.7.1",
         "react-dom": "^17.0.1",
+        "react-responsive-carousel": "^3.2.11",
         "react-router-dom": "^5.2.0"
     },
     "scripts": {
@@ -38,5 +39,8 @@
         ]
     },
     "homepage": "/wp-content/themes/react_theme",
-    "browserLaunchTo": "http://localhost:8000"
+    "browserLaunchTo": "http://localhost:8000",
+    "devDependencies": {
+        "react-particle-effect-button": "^1.0.1"
+    }
 }

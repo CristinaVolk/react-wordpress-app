@@ -7,7 +7,7 @@ import "./styles.css";
 
 export default function SideBarLeft(props) {
   return (
-    <React.Fragment>
+    <>
       <Menu>
         {menuContent.map((menuItem) => {
           return (
@@ -22,6 +22,6 @@ export default function SideBarLeft(props) {
         })}
       </Menu>
       <SideBarBottomLeft />
-    </React.Fragment>
+    </>
   );
 }
