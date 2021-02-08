@@ -18,3 +18,9 @@
   width: 12vw;
   margin-top: 15px;
 }
+
+@media screen and (max-width: 760px) {
+  .navbar {
+    border-right: none;
+  }
+}

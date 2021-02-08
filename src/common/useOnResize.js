@@ -7,7 +7,6 @@ export const useOnResize = (criticalSize) => {
     onResize(criticalSize);
     window.addEventListener("resize", () => {
       setIsMobile(onResize(criticalSize));
-      console.log(isMobile);
     });
     return () => {
       window.removeEventListener("resize", () => onResize(criticalSize));
