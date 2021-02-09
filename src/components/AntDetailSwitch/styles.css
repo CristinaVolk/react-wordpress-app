@@ -1,15 +1,14 @@
-@import "~antd/dist/antd.css";
-
 .details-switch-demo-wrapper {
   position: relative;
   overflow: hidden;
   height: 450px;
   transition: background 1s;
+  margin: 0 100px 0 130px;
 }
 
 .details-switch-demo {
   margin: 40px auto;
-  width: 600px;
+  width: 70vw;
   height: 370px;
   border-radius: 6px;
   overflow: hidden;
@@ -83,6 +82,22 @@
 .details-switch-demo-wrapper .anticon-right {
   right: 5px;
 }
+
+.swipeLeft {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 90%;
+}
+
+.swipeRight {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 90%;
+  right: 0;
+}
+
 @media screen and (max-width: 414px) {
   .details-switch-demo {
     transform: scale(0.6) translateX(12px);

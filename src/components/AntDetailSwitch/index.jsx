@@ -25,20 +25,20 @@ let dataArray = [
   {
     pic: "https://zos.alipayobjects.com/rmsportal/ogXcvssYXpECqKG.png",
     map: "https://zos.alipayobjects.com/rmsportal/HfBaRfhTkeXFwHJ.png",
-    color: "#FFF43D",
-    background: "rgb(246, 180, 41, 0.6)",
+    color: "#2D2B2D",
+    background: "rgb(76, 61, 76, 0.6)",
   },
   {
     pic: "https://zos.alipayobjects.com/rmsportal/iCVhrDRFOAJnJgy.png",
     map: "https://zos.alipayobjects.com/rmsportal/XRfQxYENhzbfZXt.png",
-    color: "#FF4058",
-    background: "rgb(252, 30, 79, 0.6)",
+    color: "#204846",
+    background: "rgb(80, 121, 118, 0.6)",
   },
   {
     pic: "https://zos.alipayobjects.com/rmsportal/zMswSbPBiQKvARY.png",
     map: "https://zos.alipayobjects.com/rmsportal/syuaaBOvttVcNks.png",
-    color: "#9FDA7F",
-    background: "rgb(100, 212, 135, 0.6)",
+    color: "rgb(107, 170, 255)",
+    background: "rgb(107, 170, 255, 0.4)",
   },
 ];
 dataArray = dataArray.map((item) => ({ ...item, ...textData }));
@@ -83,6 +83,7 @@ export default class AntDetailSwitch extends React.Component {
       showInt = 0;
     }
     this.setState({ showInt, imgAnim });
+    console.log(this.bannerImg);
     this.bannerImg.prev();
     this.bannerText.prev();
   };
@@ -166,6 +167,7 @@ export default class AntDetailSwitch extends React.Component {
             arrow={false}
             thumb={false}
             ref={(c) => {
+              console.log(c);
               this.bannerImg = c;
             }}
             onChange={this.onChange}

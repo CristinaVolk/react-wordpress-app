@@ -8,9 +8,10 @@ export const ParticleEffect = ({ content, hidden }) => {
       color='#2a292c'
       hidden={hidden}
       duration={1500}
-      speed={1}
-      easing='easeInOutCubic'
       direction='bottom'
+      type='rectangle'
+      style='stroke'
+      size={15}
     >
       {content}
     </ParticleEffectButton>
